@@ -3,11 +3,11 @@
 	Spatial by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
---><html><head><title>Kevin Hong - Research</title><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="description" content=""><meta name="keywords" content=""><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]--><script src="js/jquery.min.js"></script><script src="js/skel.min.js"></script><script src="js/skel-layers.min.js"></script><script src="js/init.js"></script><noscript>
+--><html><head><title>Kevin Seokwoo Hong - Research</title><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="description" content=""><meta name="keywords" content=""><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]--><script src="js/jquery.min.js"></script><script src="js/skel.min.js"></script><script src="js/skel-layers.min.js"></script><script src="js/init.js"></script><noscript>
 			<link rel="stylesheet" href="css/skel.css"><link rel="stylesheet" href="assets/css/main.css"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/style-xlarge.css"></noscript><link rel="stylesheet" href="assets/css/main.css"></head><body>
 
 		<!-- Header -->
-			<header id="header"><h1><strong><a href="index.html">Kevin Hong</a></strong></h1>
+			<header id="header"><h1><strong><a href="index.html">Kevin Seokwoo Hong</a></strong></h1>
 				<nav id="nav"><ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="research.html">Research</a></li>
@@ -25,8 +25,25 @@
 					<p><h4> Brookhaven National Laboratory </h4></p>
 				</header>
 				<p>
-					
+					Weak gravitational lensing data from galaxy surveys can be used to probe the underlying dark matter 
+					distribution and predict cosmological measurements. Traditionally, most weak lensing analyses utilize
+					summary statistics (e.g. two-point correlation function / power spectrum) to simplify weak lensing maps
+					for efficient and precise measurements.
+					However, two-point statistics are not insufficient for extracting all available information
+					that is contained in a cosmic map, such as non-Gaussianities.
+					Field-level inference is a technique that parameterizes the entire cosmic map for more accurate 
+					cosmological measurements.
+
+					In another Science Undergraduate Laboratory Internship (SULI) with Dr. Anže Slosar, I ran a suite of 100 
+					dark-matter-only N-body simulations and studied the statistical variance in the projected density fields. 
+					The goal of this project is to understand how the 2D projection of the density field evolves over time 
+					so we can perform field-level inference on 2D weak lensing maps (for more accurate cosmological constraints). 
+					I have been comparing my simulation results to predictions from 2nd-order Lagrangian perturbation theory. 
+
+					The image shows the projected density fields of all 100 simulations over time, with the mean of the fields 
+					on the bottom row.
 				</p>
+				<a href="#" class="image fit"><img src="images/presentationfields.gif" alt="GIF of projected density field over time"></a>
 				</div>
 			</section>
 		<!-- Two -->
@@ -34,7 +51,26 @@
 			<header class="major special"><h3>High-Resolution Spectroscopy of Hot Jupiters</h3>
 				<p><h4> University of California, Los Angeles </h4></p>
 			</header>
+			<p>
+				With Prof. Michael Fitzgerald and Luke Finnerty, I have been studying high-resolution emission spectroscopy (HRES)
+				using the Keck Planet Imager and Characterizer (KPIC). 
+				HRES is a technique of analyzing the atmospheres of exoplanets, particularly hot Jupiters (big and hot exoplanets).
+				By observing a high-resolution spectrum emitted by the planet-star system, 
+				we can use Doppler shift to isolate the planet's spectrum, which is varying over time, from the stellar spectrum,
+				which is relatively constant. This technique utilizes Bayesian inference to compare data with generated planet
+				models. 
 
+				For my first project, I determined the minimum planet velocity shift and signal-to-noise (SNR) required
+				for a significant hot Jupiter detection. I simulated a grid of planet spectra with varying velocity shift and SNR,
+				and I ran each simulated spectra through the HRES pipeline to generate a detection. By plotting the detection
+				strengths of each spectrum (see plot), we can estimate the range of planet velocity shift and SNR that is needed
+				for some detection strength (say, a 6\sigma detection). These detection estimates are useful during observation 
+				planning and for reliability checks.
+
+				I am now studying the atmosphere of a specific hot Jupiter called MASCARA-1 b. I am investigating a chemical 
+				equilibrium model that will produce more realistic constraints on chemical abundances in the atmosphere.  
+			</p>
+			<a href="#" class="image fit"><img src="images/kpic.png" alt="Detection grids"></a>
 			</div>
 		</section>
 		<!-- Three -->
@@ -43,10 +79,24 @@
 				<p><h4> SLAC National Accelerator Laboratory </h4></p>
 			</header>
 			<p>
-				As part of the Science Undergraduate Laboratory Internship (SULI) program,
-				I investigated 
+				The Vera C. Rubin Observatory will be conducting the Legacy Survey of Space and Time (LSST), 
+				which is an upcoming all-sky
+				survey that will image millions of galaxies in the entire night sky over the next ten years. In particular,
+				LSST will be measuring weak gravitational lensing, or the small distortion of background galaxies due to the
+				deflection of light by the underlying (dark) matter distribution. The Rubin Observatory will be producing 
+				much more precise measurements of weak lensing that can be used to test cosmological models.
 
+				As part of the Science Undergraduate Laboratory Internship (SULI) program with Dr. Agnès Ferté, I forecasted 
+				results from LSST weak lensing and galaxy clustering data. By using a Python package called 
+				<a href="https://cosmosis.readthedocs.io/en/latest/#">CosmoSIS</a>,
+				I simulated LSST data and performed Bayesian inference using nested sampling to produce constraints on 
+				cosmological parameters, such as the Hubble constant <i>H</i><sub>0</sub>. I also tested the impact of 
+				different shapes for the prior distributions of parameters (see plot).
+				
+				As part of this internship, I attended my first conference at the Rubin Project and Community
+				Workshop in Tucson, where I presented my first <a href="pcw_poster.pdf">poster</a>. 
 			</p>
+			<a href="#" class="image fit"><img src="images/shiftednorms_corner.png" alt="Corner plot"></a>
 			</div>
 		</section>
 	
