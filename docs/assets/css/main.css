@@ -18,7 +18,7 @@
 		vertical-align: baseline;
 	}
 .image.fit img {
-	width: 100%;
+	width: 50%;
 	height: auto;
 }
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -2295,8 +2295,11 @@
 	.image {
 		border-radius: 4px;
 		border: 0;
-		display: inline-block;
+		display: block;
 		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
 	}
 
 		.image img {
